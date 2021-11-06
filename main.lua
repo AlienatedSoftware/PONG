@@ -78,6 +78,7 @@ function love.draw()
     -- Clears colours and applies the true 1972 PONG colours
     love.graphics.clear(40/255, 45/255, 52/255, 255/255)
     -- Renders text
+    love.graphics.setFont(smallFont)
     love.graphics.printf('Hello World! Welcome to 1972.', 0, 20, VIRTUAL_WIDTH, 'center')
 
     -- Player scores on left and right of center with it's own font properties
@@ -86,9 +87,9 @@ function love.draw()
     love.graphics.print(tostring(player2Score), VIRTUAL_WIDTH / 2 + 30, VIRTUAL_HEIGHT / 3)
 
     -- Left side player
-    love.graphics.rectangle('fill', 10, 30, 5, 20)
+    love.graphics.rectangle('fill', 10, player1Y, 5, 20)
     -- Right side player
-    love.graphics.rectangle('fill', VIRTUAL_WIDTH - 10, VIRTUAL_HEIGHT - 50, 5, 20)
+    love.graphics.rectangle('fill', VIRTUAL_WIDTH - 10, player2Y, 5, 20)
     -- Ball
     love.graphics.rectangle('fill', VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 4, 4)
 
