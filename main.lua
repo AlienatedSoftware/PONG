@@ -9,8 +9,8 @@ WINDOW_HEIGHT = 720
 VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
--- [[
-    Player Speed
+--[[
+    Player speed
 ]]
 PADDLE_SPEED = 200
 
